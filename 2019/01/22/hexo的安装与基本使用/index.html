@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用一下命令生成静态html并部署到服务器 hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、mathjax及其配置">
+  <meta name="description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用以下命令，清空缓存配置、生成静态html并部署到服务器 hexo clean hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、math">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo的安装与基本使用">
 <meta property="og:url" content="http://yoursite.com/2019/01/22/hexo的安装与基本使用/index.html">
 <meta property="og:site_name" content="小菜狼爱吃兔兔">
-<meta property="og:description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用一下命令生成静态html并部署到服务器 hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、mathjax及其配置">
+<meta property="og:description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用以下命令，清空缓存配置、生成静态html并部署到服务器 hexo clean hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、math">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-22T06:14:43.529Z">
+<meta property="og:updated_time" content="2019-01-22T06:43:31.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo的安装与基本使用">
-<meta name="twitter:description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用一下命令生成静态html并部署到服务器 hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、mathjax及其配置">
+<meta name="twitter:description" content="一、安装 Mac搭建Hexo博客流程记录  二、使用 输入一下命令，会按照模版生成md文件 hexo new &amp;quot;hexo的安装与基本使用&amp;quot;  然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可 最后用以下命令，清空缓存配置、生成静态html并部署到服务器 hexo clean hexo g -d   三、next主题及其配置 安装与配置中文详细教程  四、math">
 
 
 
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="Created: 2019-01-22 13:54:00 / Modified: 14:14:43" itemprop="dateCreated datePublished" datetime="2019-01-22T13:54:00+08:00">2019-01-22</time>
+              <time title="Created: 2019-01-22 13:54:00 / Modified: 14:43:31" itemprop="dateCreated datePublished" datetime="2019-01-22T13:54:00+08:00">2019-01-22</time>
             
 
             
@@ -447,12 +447,23 @@
 <pre><code>hexo new &quot;hexo的安装与基本使用&quot;
 </code></pre>
 <p>然后用文本编辑器打开hexo的安装与基本使用.md进行修改即可</p>
-<p>最后用一下命令生成静态html并部署到服务器</p>
-<pre><code>hexo g -d
+<p>最后用以下命令，清空缓存配置、生成静态html并部署到服务器</p>
+<pre><code>hexo clean
+hexo g -d
 </code></pre>
 <h1 id="三-next主题及其配置"><a class="markdownIt-Anchor" href="#三-next主题及其配置"></a> 三、next主题及其配置</h1>
 <p><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">安装与配置中文详细教程</a></p>
 <h1 id="四-mathjax及其配置"><a class="markdownIt-Anchor" href="#四-mathjax及其配置"></a> 四、mathjax及其配置</h1>
+<p><a href="https://blog.csdn.net/qq_34229391/article/details/82725229" target="_blank" rel="noopener">Hexo使用next主题也可以用latex啦</a></p>
+<p>要点：<br>
+如果有latex，请在博文的文件头加入：</p>
+<pre><code>mathjax: true
+</code></pre>
+<p>即可使用latex语法啦：</p>
+<pre><code>$f(x)=\sin(\theta^2) + \dfrac{1}{3} e^{-\beta \hat{H}}$
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mo>(</mo><msup><mi>θ</mi><mn>2</mn></msup><mo>)</mo><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mi>β</mi><mover accent="true"><mi>H</mi><mo>^</mo></mover></mrow></msup></mrow><annotation encoding="application/x-tex">f(x)=\sin(\theta^2) + \dfrac{1}{3} e^{-\beta \hat{H}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mop">sin</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.025739em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.05278em;">β</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span><span style="top:-2.9523300000000003em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mtight">^</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>ρ</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat\rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathdefault">ρ</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;">^</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span></span></span></p>
 
       
     </div>
