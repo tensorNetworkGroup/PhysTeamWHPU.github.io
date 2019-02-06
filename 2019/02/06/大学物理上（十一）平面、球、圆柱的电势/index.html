@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="知识点 单体  (1) 借助高斯定理，求出场强$\vec{E}(\vec{r})$。注意一般是分段函数。  (2) 从关心的场点向零势能点（一般为无穷远）进行分段积分：$V=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。    组合体 叠加法    表达题 复习 之前我们学过电势的概念。某场点的电势为$V$，它的物理意义是：    解答：单位电荷在该点具有的电势">
+<meta name="keywords" content="教学项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大学物理上（十一）平面、球、圆柱的电势">
+<meta property="og:url" content="http://yoursite.com/2019/02/06/大学物理上（十一）平面、球、圆柱的电势/index.html">
+<meta property="og:site_name" content="XXXX教研室">
+<meta property="og:description" content="知识点 单体  (1) 借助高斯定理，求出场强$\vec{E}(\vec{r})$。注意一般是分段函数。  (2) 从关心的场点向零势能点（一般为无穷远）进行分段积分：$V=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。    组合体 叠加法    表达题 复习 之前我们学过电势的概念。某场点的电势为$V$，它的物理意义是：    解答：单位电荷在该点具有的电势">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-02-06T01:38:12.268Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大学物理上（十一）平面、球、圆柱的电势">
+<meta name="twitter:description" content="知识点 单体  (1) 借助高斯定理，求出场强$\vec{E}(\vec{r})$。注意一般是分段函数。  (2) 从关心的场点向零势能点（一般为无穷远）进行分段积分：$V=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。    组合体 叠加法    表达题 复习 之前我们学过电势的概念。某场点的电势为$V$，它的物理意义是：    解答：单位电荷在该点具有的电势">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/02/06/大学物理上（十一）平面、球、圆柱的电势/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>大学物理上（十一）平面、球、圆柱的电势 | XXXX教研室</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">XXXX教研室</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/06/大学物理上（十一）平面、球、圆柱的电势/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小菜狼">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XXXX教研室">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">大学物理上（十一）平面、球、圆柱的电势
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-06 09:01:54 / Modified: 09:38:12" itemprop="dateCreated datePublished" datetime="2019-02-06T09:01:54+08:00">2019-02-06</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/大学物理上/" itemprop="url" rel="index"><span itemprop="name">大学物理上</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li>单体 <ul>
+<li>(1) 借助高斯定理，求出场强$\vec{E}(\vec{r})$。注意一般是分段函数。 </li>
+<li>(2) 从关心的场点向零势能点（一般为无穷远）进行分段积分：$V=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。 </li>
+</ul>
+</li>
+<li>组合体<ul>
+<li>叠加法</li>
+</ul>
+</li>
+</ul>
+<h4 id="表达题"><a href="#表达题" class="headerlink" title="表达题"></a>表达题</h4><ul>
+<li><p><strong>复习</strong></p>
+<p>之前我们学过电势的概念。某场点的电势为$V$，它的物理意义是：</p>
+</li>
+</ul>
+<blockquote>
+<p>解答：单位电荷在该点具有的电势能（所以是个标量）</p>
+</blockquote>
+<ul>
+<li><p><strong>复习</strong></p>
+<p>电势的计算，第一种方法是点电荷的积分大法，也就是把场源电荷电荷看成是由很多电量为$dq$的点电荷组成，然后求和或积分搞定，核心公式为( )</p>
+</li>
+</ul>
+<blockquote>
+<p>解答：$V=\int\frac{1}{4\pi\epsilon_{0}}\cdot\frac{dq}{r}$</p>
+</blockquote>
+<a id="more"></a>
+<ul>
+<li><strong>复习</strong><br> 我们将$q$从无穷远推到当前场点时，外力做的功，转化为电势能。设空间任意场点$\vec{r}$处的电场强度为$\vec{E}(\vec{r})$，则电势能的计算式可能为：<br> (1) $E_{p}=\int_{\infty}^{A}\vec{F}_{\text{外}}\cdot d\vec{r}=\int_{\infty}^{A}(-q\vec{E})\cdot d\vec{r}=\int_{A}^{\infty}q\vec{E}\cdot d\vec{r}=q\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。 <br> (2) $E_{p}=\int_{\infty}^{A}\vec{F}_{\text{外}}\cdot d\vec{r}=\int_{\infty}^{A}(q\vec{E})\cdot d\vec{r}=\int_{\infty}^{A}q\vec{E}\cdot d\vec{r}=q\int_{\infty}^{A}\vec{E}\cdot d\vec{r}$。<br> 则根据电势的定义，得到电势和电场的积分关系可能为：<br> (3) $V=\frac{E_{p}}{q}=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。<br> (4) $V=\frac{E_{p}}{q}=\int_{\infty}^{A}\vec{E}\cdot d\vec{r}​$。<br> 以上正确的是()</li>
+</ul>
+<blockquote>
+<p>解答：(1)(3)</p>
+</blockquote>
+<ul>
+<li>某实心均匀带电球体，电量为$Q$，半径为$R$。根据高斯定理易知：<script type="math/tex">E=\begin{cases} \begin{array}{l} E_{I}(r)=\frac{1}{4\pi\epsilon_{0}}\cdot\frac{Q}{r^{2}}\\ E_{II}(r)=\frac{1}{4\pi\epsilon_{0}}\cdot\frac{Q/R^{3}\times r^{3}}{r^{2}} \end{array} & \begin{array}{c} r>R\\ r &lt; R \end{array}\end{cases}</script> <br> 则距离球心为$r_{0}=\frac{3R}{2}$处的电势的计算式为<br> (1) $V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{\infty}E_{I}(r)dr$。<br> (2) $V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{\infty}E_{II}(r)dr$。<br> 则距离球心为$r_{0}=\frac{R}{2}$处的电势的计算式为 <br> (3) $V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{\infty}E_{I}(r)dr$。 <br> (4) $V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{\infty}E_{II}(r)dr$。 <br> (5) $V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{R}E_{II}(r)dr+\int_{R}^{\infty}E_{I}(r)dr$。<br> 请理解电势计算的几何意义 <br> (6) 胡乱写积分表达式 <br> (7) $E(r)$分段曲线下方所围成的面积 <br> 以上正确的是( )</li>
+</ul>
+<blockquote>
+<p>解答：(1)(5)(7)</p>
+</blockquote>
+<ul>
+<li>某均匀带电空腔球体，电量为$Q$，内径为$R_{1}$，外径为$R_{2}$。根据高斯定理易知：<script type="math/tex">E=\begin{cases}\begin{array}{l} E_{I}(r)=\frac{1}{4\pi\epsilon_{0}}\cdot\frac{Q}{r^{2}}, r>R_{2}  \\ E_{II}(r)=\frac{1}{4\pi\epsilon_{0}}\cdot\frac{  Q_{0} }{r^{2}},  [Q_{0}=Q/(R_{2}^{3}-R_{1}^{3})\times(r^{3}-R_{1}^{3})], r\in(R_{1},R_{2})\\ E_{III}=0 , r&lt; R_{1} \end{array} \end{cases}</script> <br>则距离球心为$r_{0}\in(R_{1},R_{2})$处的电势的计算式为( )</li>
+</ul>
+<blockquote>
+<p>解答：$V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{R_{2}}E_{II}(r)dr+\int_{R_{2}}^{\infty}E_{I}(r)dr$。</p>
+</blockquote>
+<ul>
+<li>某均匀带电无限长实心圆柱体，半径为$R$，电荷体密度为$\rho$，则距离轴线为$r_{0}=\frac{R}{2}$处的电势的积分表达式为：( )”</li>
+</ul>
+<blockquote>
+<p>$V=\int_{r_{0}}^{\infty}\vec{E}\cdot d\vec{r}=\int_{r_{0}}^{R}\frac{\rho}{2\epsilon_{0}}rdr+\int_{R}^{\infty}\frac{\rho R^{2}}{2\epsilon_{0}}\cdot\frac{1}{r}dr$。</p>
+</blockquote>
+<ul>
+<li>球、柱、面状带电体的电势，一般使用积分来计算：$V=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}$。如果要求$A\text{、}B$两点的电势差$U_{A,B}​$，则为(  )</li>
+</ul>
+<blockquote>
+<p>解答：$V=\int_{A}^{B}\vec{E}\cdot d\vec{r}$。 $U_{A,B}=V_{A}-V_{B}=\int_{A}^{\infty}\vec{E}\cdot d\vec{r}+\int_{B}^{\infty}\vec{E}\cdot d\vec{r}=\int_{A}^{B}\vec{E}\cdot d\vec{r}$</p>
+</blockquote>
+<ul>
+<li>均匀带电的无限大平板，厚度为$D$，电荷体密度为$\rho$。现在求图中$A(x=\frac{D}{5})\text{、}B(x=3D)$两点的电势差。<br> 第一步，用高斯定理求电场，得到<br> (1) $E=\begin{cases} \begin{array}{l} E_{I}(r)=\frac{\rho D}{2\epsilon_{0}}\\ E_{II}(r)=\frac{\rho}{\epsilon_{0}}x\end{array} &amp; \begin{array}{c} x&gt;\frac{D}{2}\\ x&lt;\frac{D}{2} \end{array}\end{cases}$ <br> (2) $E=\begin{cases} \begin{array}{l}E_{I}(r)=\frac{\rho D}{\epsilon_{0}}\\ E_{II}(r)=\frac{\rho}{2\epsilon_{0}}x \end{array} &amp; \begin{array}{c} x&gt;\frac{D}{2}\\x&lt;\frac{D}{2} \end{array}\end{cases}$ <br> 第二步，借助$V=\int_{A}^{B}\vec{E}\cdot d\vec{r}$计算电势差。考虑到电场的方向，以及$B_{1}$与$B$电势相等，事实上只需要计算$\int_{A}^{B_{1}}\vec{E}\cdot d\vec{r}$，从而化为标量积分。则积分表达式为<br> (3) $V=\int_{D/5}^{D/2}\frac{\rho D}{2\epsilon_{0}}dx+\int_{D/2}^{3D}\frac{\rho}{\epsilon_{0}}xdx$ <br> (4) $V=\int_{D/5}^{D}\frac{\rho D}{\epsilon_{0}}dx+\int_{D}^{3D}\frac{\rho}{2\epsilon_{0}}xdx$ <br> 以上正确的是()</li>
+</ul>
+<blockquote>
+<p>解答：(1)(3)</p>
+</blockquote>
+<ul>
+<li>学知识需要自己悟出点感性的东西。下面关于电势说法，有<br> (1) 顺着电场线，电势是降低的 <br> (2) 由于左右对称性，$A$与$A’$的电势相等<br> (3) 如果要求$A’\text{、}B$两点的电势差$U_{A’,B}$，其实只需要求$U_{A,B}$ <br> (4) $B$和$B’’$电势相等，因为$\int_{B}^{B’’}\vec{E}\cdot d\vec{r}$中，$\vec{E}$的方向时刻跟$d\vec{r}$的方向垂直 <br> (5) 事实上$B$与$B’’$位于同一个等势面 <br> (6)  学完了想一想，球、柱、平板电荷中高斯面的选择，似乎跟等势面有很大的相似性。 <br> 以上正确的是( )</li>
+</ul>
+<blockquote>
+<p>解答：全对</p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/教学项目/" rel="tag"># 教学项目</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/06/大学物理上（十三）螺线管、螺线环、导线圆柱、导电板的磁场：安培环路定理/" rel="next" title="大学物理上（十三）螺线管、螺线环、导线圆柱、导电板的磁场：安培环路定理">
+                <i class="fa fa-chevron-left"></i> 大学物理上（十三）螺线管、螺线环、导线圆柱、导电板的磁场：安培环路定理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/06/大学物理上（六）转动定律/" rel="prev" title="大学物理上（六）转动定律">
+                大学物理上（六）转动定律 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">小菜狼</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#知识点"><span class="nav-number">1.0.1.</span> <span class="nav-text">知识点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表达题"><span class="nav-number">1.0.2.</span> <span class="nav-text">表达题</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小菜狼</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

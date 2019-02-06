@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="XXXX教研室">
 <meta property="og:description" content="知识点 $\Delta s$ ，$\Delta r$， $\Delta  \vec{r}$  等符号的理解 圆周运动 一般曲线运动，已知$\vec{r}(t)$求速度，加速度 一般曲线运动的加速度表达式  表达题 质点在Oxy 平面内运动,其运动方程为$\vec{r}=3t\ \vec{i}+(1-t^{2})\ \vec{j}$．则在$t_{1}=1$ 到$t_{2}=5$ 时间内的平均速度为">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-06T02:05:33.631Z">
+<meta property="og:updated_time" content="2019-02-06T02:12:42.574Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大学物理上（二）高维运动的描述">
 <meta name="twitter:description" content="知识点 $\Delta s$ ，$\Delta r$， $\Delta  \vec{r}$  等符号的理解 圆周运动 一般曲线运动，已知$\vec{r}(t)$求速度，加速度 一般曲线运动的加速度表达式  表达题 质点在Oxy 平面内运动,其运动方程为$\vec{r}=3t\ \vec{i}+(1-t^{2})\ \vec{j}$．则在$t_{1}=1$ 到$t_{2}=5$ 时间内的平均速度为">
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="Created: 2019-02-06 10:02:54 / Modified: 10:05:33" itemprop="dateCreated datePublished" datetime="2019-02-06T10:02:54+08:00">2019-02-06</time>
+              <time title="Created: 2019-02-06 10:02:54 / Modified: 10:12:42" itemprop="dateCreated datePublished" datetime="2019-02-06T10:02:54+08:00">2019-02-06</time>
             
 
             
@@ -473,6 +473,97 @@
 <blockquote>
 <p>解答：$f(\theta)$</p>
 </blockquote>
+<ul>
+<li>速度的表达式为$\vec{v}(t)=\frac{d\vec{r}(t)}{dt}$，初学者可能误认为对于任意时刻$t_{0}$有$\vec{v}(t_{0})=\frac{d\vec{r}(t_{0})}{dt}$，这是错误的。这只是一个记号，它的真实含义是任意时刻$t_{0}$，$\vec{v}(t_{0})=\frac{\vec{r}(t_{0}+dt)-\vec{r}(t_{0})}{dt}$，实际运算中用求导法则计算。比如，已知质点的运动方程为$\vec{r}(t)=2t\vec{i}+(4-t^{2})\vec{j}$，则$t=2$时刻位矢为$\vec{r}(2)=4\vec{i}$, 那么$t=2$时刻的速度呢？$\vec{v}=\frac{d(4\vec{i})}{dt}=0$吗？遵循这一思路，请求出该质点在$t=2$时刻的加速度</li>
+</ul>
+<blockquote>
+<p>解答：$\vec{a}=-2\vec{j}$</p>
+</blockquote>
+<ul>
+<li><p>理解抽象符号是深入学习的必备条件之一 。一个质点，在$t$时刻位矢为$\vec{r}$,离开原点的距离为$r$(简称半径，大小为$r=|\vec{r}|$)；在$t’$时刻位矢为$\vec{r}’$,离开原点的距离为$r’$；在$t$至$t’$时间内：走过的路程(轨迹的长度)为$\Delta s$, 位矢的增量(末态-初态,简称位移)为$\Delta\vec{r}=\vec{r}’-\vec{r}$，半径的增量为$\Delta r$( 末态-初态，大小为$\text{Δ}r=r’-r$)。设一个质点以坐标原点为圆心、以1为半径，做逆时针的圆周运动，$t$时刻在(1,0)位置，$t’$时刻第一次转到(0,1)位置。则这短时间内的$\Delta s$、$\text{Δ}\vec{r}$、$\Delta r$分别为</p>
+<blockquote>
+<p>解答：$\Delta s=\pi/2$, $Δ\vec{r}=j-i$, $\Delta r=0$</p>
+</blockquote>
+</li>
+<li><p>通常情况下，两点之间直线长度(弦长)比曲线长度(弧长)要短。但对于无限短的曲线，弧长和弦长是相等的(画图思考)。则</p>
+<blockquote>
+<p>解答：质点在$t$至($t +\Delta t$)时间内沿曲线从P 点运动到P′点,各量关系如图所示,其中路程$\Delta s$＝PP′, 位移大小$|\Delta r|=PP\prime$,而$\Delta r=|\vec{r}|-|\vec{r}’|$表示质点位矢大小的变化量,三个量的物理含义不同,在曲线运动中大小也不相等(注：在直线运动中有相等的可能)．但当$\Delta t\rightarrow0$ 时,点P′无限趋近P点,则有$|d\vec{r}|=ds$,但却不等于$dr$</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>质点作曲线运动,在时刻$t$质点的位矢为$\vec{r}$,速度为$\vec{v}$,速率为$v$,$t$至($t+\Delta t$)时间内的位移为$\Delta r$, 路程为$\Delta s$, 位矢大小的变化量为$\Delta r$( 或称$\Delta|\vec{r}|$),平均速度为$\overline{\vec{v}}$,平均速率为 $v$． 根据上述情况,则必有</li>
+</ul>
+<blockquote>
+<p>解答：由于$|\Delta\vec{r}|\neq\Delta s$,故$|\Delta\vec{r}|/\Delta t\neq\Delta s/\Delta t$,即$|\overline{\vec{v}}|=\overline{v}$．由于$|d\vec{r}|=ds$,故$|d\vec{r}|/dt=ds/dt$,即$|d\vec{r}/dt|=ds/dt$,亦即瞬时速度的大小等于瞬时速率。</p>
+</blockquote>
+<ul>
+<li>一运动质点在某瞬时的位矢为$\vec{r}(x,y)$，对其速度的大小为<ul>
+<li>(1) $\frac{dr}{dt}$；</li>
+<li>(2) $\frac{d|\vec{r}|}{dt}$；</li>
+<li>(3) $\frac{ds}{dt}$；</li>
+<li>(4) $\sqrt{(\frac{dx}{dt})^{2}+(\frac{dy}{dt})^{2}}$.</li>
+</ul>
+</li>
+</ul>
+<p>上述判断正确的是</p>
+<blockquote>
+<p>解答：$\frac{dr}{dt}$表示质点到坐标原点的距离(半径)随时间的变化率,叫径向速率，它只是速度矢量在径向的分量；$\frac{d|\vec{r}|}{dt}$和$\frac{dr}{dt}$等价；在自然坐标系中速度大小可用$\frac{ds}{dt}$计算，在$x-o-y$直角坐标系中，$\vec{v}=\frac{d\vec{r}}{dt}=\frac{d(x\vec{i}+y\vec{j})}{dt}$$=\frac{dx}{dt}\vec{i}+\frac{dy}{dt}\vec{j}=v_{x}\vec{i}+v_{y}\vec{j}$，故$v=\sqrt{v_{x}^{2}+v_{y}^{2}}$.</p>
+</blockquote>
+<ul>
+<li>曲线运动中，加速度经常按切向$\vec{e}_{t}$和法向$\vec{e}_{n}$进行分解：$\vec{a}=\vec{a}_{t}+\vec{a}_{n}$$=\frac{dv}{dt}\vec{e}_{t}+\frac{v^{2}}{R}\vec{e}_{n}$借助熟悉的例子来构建其直观物理图像，有助于理解并记忆这些复杂的公式。在弯曲的轨道上匀速率行驶的火车，<br>(1) $\vec{a}_{t}\neq0$，<br>(2) $\vec{a}_{t}=0$，<br>在直线上加速跑向食堂的小伙伴，<br>(3) $\vec{a}_{t}\neq0$，<br>(4) $\vec{a}_{t}=0$，<br>变速圆周运动的质点，<br>(5) $\vec{a}_{t}\neq0$，$\vec{a}_{n}=0$。<br>(6) $\vec{a}_{t}\neq0$，$a_{n}=\frac{v^{2}}{R}$不就是高中学过的向心加速度嘛。<br>上述判断正确的为<blockquote>
+<p>解答：(2)(3)(6)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>质点作曲线运动，对下列表述中，</li>
+</ul>
+<ul>
+<li><p>(1)$dv/dt=a$；</p>
+</li>
+<li><p>(2)$dr/dt=v$；</p>
+</li>
+<li><p>(3)$ds/dt=v$；</p>
+</li>
+<li><p>(4)$|d\vec{v}/dt|=a_{t}$． </p>
+<p>正确的是(　　) </p>
+<blockquote>
+<p>解答：$\vec{a}=\vec{a}_{t}+\vec{a}_{n}$$=\frac{dv}{dt}\vec{e}_{t}+\frac{v^{2}}{R}\vec{e}_{n}$，故而$a=\sqrt{(\frac{dv}{dt})^{2}+(\frac{v^{2}}{R})^{2}}$。$\frac{dv}{dt}$表示切向加速度$a_{t}$，它表示速度大小随时间的变化率，是加速度矢量沿速度方向的一个分量，起改变速度大小的作用；$\frac{dr}{dt}$在极坐标系中表示径向速率，比如变速圆周运动中，$\frac{dr}{dt}$总等于零，但$v\neq0$；(3)是自然坐标系中速率$v$的计算公式；$|d\vec{v}/dt|$表示加速度的大小，$\frac{dv}{dt}$表示切向加速度的大小，在匀速率圆周运动中，前者总不为零而后者总为零，不应该混淆。</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>一个质点在做圆周运动时,则<ul>
+<li>切向加速度一定改变,法向加速度也改变</li>
+<li>切向加速度可能不变,法向加速度一定改变</li>
+<li>切向加速度可能不变,法向加速度不变</li>
+<li>切向加速度一定改变,法向加速度不变</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>解答：加速度的切向分量$a_{t}$起改变速度大小的作用,而法向分量$a_{n}$起改变速度方向的作用．质点作圆周运动时,由于速度方向不断改变,相应法向加速度的方向也在不断改变,因而法向加速度是一定改变的．至于$a_{t}$是否改变,则要视质点的速率情况而定．质点作匀速率圆周运动时,$a_{t}$恒为零；质点作匀变速率圆周运动时,$a_{t}$为一不为零的恒量,当$a_{t}$改变时,质点则作一般的变速率圆周运动</p>
+</blockquote>
+<ul>
+<li>物体作斜抛运动，初速度大小为$v_{0}$，且速度方向与水平前方夹角为$\theta$，则物体轨道最高点处的曲率半径为( )。</li>
+</ul>
+<blockquote>
+<p>解答：曲线运动中，法向加速度为$a_{n}=\frac{v^{2}}{\rho}$(其中$\rho$是曲率半径)，故$\rho=\frac{v^{2}}{a_{n}}$，其中$a_{n}$为“轨道最高点处”的法向加速度，应为$g$(此时切向加速度为零)，速度$v=v_{0}\cos\theta$.</p>
+<ul>
+<li>法向加速度和切向加速度的核心公式是需要记忆的：$a_{n}=\frac{v^{2}}{R}$和$a_{t}=\frac{dv}{dt}$。质点沿半径为$R$的圆周运动，其角位移随时间$t$的变化规律是$\theta=2+4t^{2}$。在$t=1$ 时，它的法向加速度和切向加速度分别为()</li>
+</ul>
+<h2 id="解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-关键是求出-omega-已知-omega-frac-d-theta-dt-8t"><a href="#解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-关键是求出-omega-已知-omega-frac-d-theta-dt-8t" class="headerlink" title="解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}$. 关键是求出$\omega$. 已知: $\omega=\frac{d\theta}{dt}=8t$. "></a>解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}$. 关键是求出$\omega$. 已知: $\omega=\frac{d\theta}{dt}=8t$. </h2></blockquote>
+<ul>
+<li>质点P在水平面内沿一半径为$1$的圆轨道转动。转动的角速度与时间t的函数关系为$\omega=kt$ (k为常量)。已知$t=2$ 时，质点P的速度值为$4$ 。试求$t=0$ 时，质点P加速度的大小为()</li>
+</ul>
+<h2 id="gt-解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-k-2-t-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-k-加速度的大小为-a-sqrt-a-n-2-a-t-2-sqrt-k-4-t-4-k-2-关键是求出-k-由于-v-R-omega-kt-，知-k-frac-v-t-2-因此-a-2"><a href="#gt-解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-k-2-t-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-k-加速度的大小为-a-sqrt-a-n-2-a-t-2-sqrt-k-4-t-4-k-2-关键是求出-k-由于-v-R-omega-kt-，知-k-frac-v-t-2-因此-a-2" class="headerlink" title="&gt; 解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}=k^{2}t^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}=k$. 加速度的大小为$a=\sqrt{a_{n}^{2}+a_{t}^{2}}=\sqrt{k^{4}t^{4}+k^{2}}$. 关键是求出$k$. 由于$v=R\omega=kt$，知$k=\frac{v}{t}=2$. 因此$a=2$"></a>&gt; 解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}=k^{2}t^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}=k$. 加速度的大小为$a=\sqrt{a_{n}^{2}+a_{t}^{2}}=\sqrt{k^{4}t^{4}+k^{2}}$. 关键是求出$k$. 由于$v=R\omega=kt$，知$k=\frac{v}{t}=2$. 因此$a=2$</h2><ul>
+<li>质点在$Oxy$ 平面内运动，其运动方程为$\vec{r}=t\ \vec{i}+\frac{1}{2}t^{2}\ \vec{j}$．则在$t=1$ 时切向和法向加速度分别为()</li>
+</ul>
+<blockquote>
+<p>解答：曲线运动中，$a_{n}=\frac{v^{2}}{\rho}$(其中$\rho$是曲率半径，未知，所以无法直接求解$a_{n}$), $a_{t}=\frac{dv}{dt}$(可由$\vec{r}$算出$v(t)$，从而得到$a_{t}$). 加速度的大小的公式有两个$a=\sqrt{a_{n}^{2}+a_{t}^{2}}$，或$a=|\vec{a}|=|\frac{d\vec{v}}{dt}|$。本题中，由于$\vec{r}$已知，我们可借助第二个公式算出$a$。最后有$a_{n}=\sqrt{a^{2}-a_{t}^{2}}$。具体地，$\vec{v}=\frac{d\vec{r}}{dt}=\vec{i}+t\ \vec{j}$，$\vec{a}=\frac{d\vec{v}}{dt}=\vec{j}$. 于是，$a_{t}=\frac{dv}{dt}=\frac{d\sqrt{1+t^{2}}}{dt}<script type="math/tex">=\frac{t}{\sqrt{t^{2}+1}}</script>=\sqrt{2}/2$. $a=|\vec{a}|=1$. 于是 $a_{n}=\sqrt{a^{2}-a_{t}^{2}}$$=\sqrt{2}/2$.</p>
+</blockquote>
+<hr>
 
       
     </div>
@@ -587,7 +678,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -675,7 +766,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">知识点</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#表达题"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">表达题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">知识点</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#表达题"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">表达题</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-关键是求出-omega-已知-omega-frac-d-theta-dt-8t"><span class="nav-number">2.</span> <span class="nav-text">解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}$. 关键是求出$\omega$. 已知: $\omega=\frac{d\theta}{dt}=8t$. </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gt-解答：圆周运动中，-a-n-frac-v-2-R-R-omega-2-k-2-t-2-a-t-frac-dv-dt-frac-d-R-omega-dt-R-frac-d-omega-dt-k-加速度的大小为-a-sqrt-a-n-2-a-t-2-sqrt-k-4-t-4-k-2-关键是求出-k-由于-v-R-omega-kt-，知-k-frac-v-t-2-因此-a-2"><span class="nav-number">3.</span> <span class="nav-text">&gt; 解答：圆周运动中，$a_{n}=\frac{v^{2}}{R}=R\omega^{2}=k^{2}t^{2}$, $a_{t}=\frac{dv}{dt}=\frac{d(R\omega)}{dt}$$=R\frac{d\omega}{dt}=k$. 加速度的大小为$a=\sqrt{a_{n}^{2}+a_{t}^{2}}=\sqrt{k^{4}t^{4}+k^{2}}$. 关键是求出$k$. 由于$v=R\omega=kt$，知$k=\frac{v}{t}=2$. 因此$a=2$</span></a></li></div>
             
 
           </div>
