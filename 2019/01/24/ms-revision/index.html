@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="XXXX教研室">
 <meta property="og:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-11T12:35:02.248Z">
+<meta property="og:updated_time" content="2019-02-11T12:37:07.536Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ms revision">
 <meta name="twitter:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
@@ -400,7 +400,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-11 20:35:02" itemprop="dateModified" datetime="2019-02-11T20:35:02+08:00">2019-02-11</time>
+                <time title="Modified: 2019-02-11 20:37:07" itemprop="dateModified" datetime="2019-02-11T20:37:07+08:00">2019-02-11</time>
               
             
           </span>
@@ -474,8 +474,9 @@
 <ul>
 <li>For two-site state, $M$ can be calculated analytically. </li>
 <li>For $2&lt;n&lt;=7$, no analytical solution exists. Thereby, one may construct a objective function $f$, and optimize it with respective to the 2n unit vectors. </li>
-<li>For large $n$, for instance, with $n​$ up to 100, one need to use tensor-network based algorithms.<br>We have summarized these situations in the first two paragraphs of Page 3. We hope the revised version is more instructive.</li>
+<li>For large $n$, for instance, with $n​$ up to 100, one need to use tensor-network based algorithms. </li>
 </ul>
+<p>We have summarized these situations in the first two paragraphs of Page 3. We hope the revised version is more instructive.</p>
 <hr>
 <p><strong><em> 3. In Fig. 7 it might be helpful to write in the legend explicitly “PEPS” and “MPS” instead to indicate this via $\phi_0$ and $\varphi$. </em></strong></p>
 <p><strong><em>Response:</em></strong><br>In the revised version, we have used explicitly the words “PEPS” and “MPS” in the legend of Fig. 7.</p>
@@ -488,10 +489,12 @@
 <p><strong><em>Response:</em></strong><br>In the revised version, we have defined both $g_l$ and $e_l$ in terms of $A_l$, and placed their definition before Eq. (5) in Page 3. In addition, we have also added a paragraph and several papers to refer to the widely used canonical form of MPS, which is below Eq. (7) and in red color.</p>
 <hr>
 <p><strong><em>2. Below Eq.(8), the authors write the $\hat{M}_{[1\dots N]}$ as an MPO. The authors can elaborate a little bit on this construction for those who are not familiar with this.</em></strong></p>
-<p><strong><em>Response:</em></strong><br>We thank the referee very much to point out that the operator $\hat{M}_n$ in Eq.(8) is in the form of the summation of four MPOs.<br>The construction of the tripartite form is based upon the recursive definition of these operators. According to the referee’s comment, we have added an appendix in Page 10. We hope the appendix is useful for those who are interested in the construction of the operators. </p>
+<p><strong><em>Response:</em></strong><br>We thank the referee very much to point out that the operator $\hat{M}_n$ in Eq.(8) is in the form of the summation of four MPOs. </p>
+<p>The construction of the tripartite form is based upon the recursive definition of these operators. According to the referee’s comment, we have added an appendix in Page 10. We hope the appendix is useful for those who are interested in the construction of the operators. </p>
 <hr>
 <p><strong><em>3. Section 3.2: The authors write that calculating two-site EVs require six effective environment tensors. This is only true for the CTMRG technique. One can also use other techniques like boundary MPS, etc.</em></strong></p>
-<p><strong><em>Response:</em></strong><br>We thank the referee for the comment. Boundary MPS and CTM are two widely used algorithms to calculate the effective environment tensors in PEPS. In this manuscript, we have just used the boundary MPS method, since we deal with finite-size squares. According to Fig. 2 in the original paper about the boundary MPS method (Jordan PRL 101, 250602, 2008), we used six tensors to describe the enviroment in our program.<br>According to the referee’s comment, in Section 3.2, we have added a sentence refering both methods. Please see the paragraph in red color. In addition, the number “six’’ is deleted in the manuscript. Thank the referee again for your patience.</p>
+<p><strong><em>Response:</em></strong><br>We thank the referee for the comment. Boundary MPS and CTM are two widely used algorithms to calculate the effective environment tensors in PEPS. In this manuscript, we have just used the boundary MPS method, since we deal with finite-size squares. According to Fig. 2 in the original paper about the boundary MPS method (Jordan PRL 101, 250602, 2008), we used six tensors to describe the enviroment in our program.  </p>
+<p>According to the referee’s comment, in Section 3.2, we have added a sentence refering both methods. Please see the paragraph in red color. In addition, the number “six’’ is deleted in the manuscript. Thank the referee again for your patience.</p>
 <hr>
 <p><strong><em>4. On the same section,the authors discusses the diffculty in evaluating Bell correlation function. I do not quite get why the authors can’t simply use a PEPO to represent the M operator and compute the sandwich. The authors say computing it with PEPS is ‘too difficult’. Do they mean its too expensive? If so, what is the cost?</em></strong></p>
 <p><strong><em>Response:</em></strong></p>
@@ -507,12 +510,18 @@
 <ul>
 <li>(S1) Prepare the MPS- ground state of the model.</li>
 <li>(S2) Figure out the reduced density matrix of the concerned subregion from the MPS. The reduced density m matrix is in the form of one-dimensional networks, i.e., MPO. We have added two sub-figures in Fig. 10, that is, Fig. 10(c) and Fig. 10(d). The corresponding text are added into the second paragraph of Sec. 4.2.2.</li>
-<li>(S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.<br>Next, we answer the referee’s major concern, i.e., the calculation of the entropy in the subregions.<br>In order to calculate the entanglement entropy E for some small subregions on the N*N lattice, we mainly follow two steps:</li>
+<li>(S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.</li>
+<li>Next, we answer the referee’s major concern, i.e., the calculation of the entropy in the subregions. In this manuscript, since we only deal with the entanglement entropy E for some small subregions on the N*N lattice, we mainly follow two steps:</li>
 <li>(E1) Figure out the reduced density matrix $rho$ explicitly by contracting the MPO from above step (S2).</li>
-<li>(E2) Diagnolize rho, figure out its full eigen-value spectrum, and calculate the entropy.<br>Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.<br>In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </li>
-<li>(c1) the ground state is in the form of canonical MPS, and </li>
-<li>(c2) one just concerns the entropy between the left part of the MPS and the right part (in other words, the MPS is divided into two parts).<br>For instance, the entanglement entropy for subregion II in Fig. 10 may be figured out by this method. However, when considering subregions I, from Fig. 10(d) one can see that the MPS is divided into four part, i.e., [1,2,…,23], [24,25,26],[27…33],[34,35,36]. In such a situation, we need to use the steps (E1) and (E2) to calculate the entropy.<br>According to the referee’s comment, we have added two subfigures in Fig. 10 to illustrate the network for the reduced density matrix of the subregions. In addition, in Sec 4.2.2, we have added the second paragraph to explain the alrorithm for calculating the partial nonlocality. Finally, on Page 10, just above Eq. (21), we have added several sentences to explain the calculation of the entanglement entropy. We hope the revised manuscript becomes more readable. We thank the referee for the patience.  </li>
+<li>(E2) Diagnolize rho, figure out its full eigen-value spectrum, and calculate the entropy. </li>
+<li>Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.</li>
 </ul>
+<p>In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </p>
+<ul>
+<li>(c1) the ground state is in the form of canonical MPS, and </li>
+<li>(c2) one just concerns the entropy between the left part of the MPS and the right part (in other words, the MPS is divided into two parts).<br>For instance, the entanglement entropy for subregion II in Fig. 10 may be figured out by this method. However, when considering subregions I, from Fig. 10(d) one can see that the MPS is divided into four part, i.e., [1,2,…,23], [24,25,26],[27…33],[34,35,36]. In such a situation, we need to use the steps (E1) and (E2) to calculate the entropy. </li>
+</ul>
+<p>According to the referee’s comment, we have added two subfigures in Fig. 10 to illustrate the network for the reduced density matrix of the subregions. In addition, in Sec 4.2.2, we have added the second paragraph to explain the alrorithm for calculating the partial nonlocality. Finally, on Page 10, just above Eq. (21), we have added several sentences to explain the calculation of the entanglement entropy. We hope the revised manuscript becomes more readable. We thank the referee for the patience.  </p>
 <hr>
 <p><strong><em>I would definitely like to get some clarifications on the above specially point (5) and(7) before the paper gets accepted in the journal.</em></strong></p>
 <hr>
