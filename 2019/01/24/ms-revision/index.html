@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="XXXX教研室">
 <meta property="og:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-11T12:15:53.094Z">
+<meta property="og:updated_time" content="2019-02-11T12:26:56.584Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ms revision">
 <meta name="twitter:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
@@ -400,7 +400,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-11 20:15:53" itemprop="dateModified" datetime="2019-02-11T20:15:53+08:00">2019-02-11</time>
+                <time title="Modified: 2019-02-11 20:26:56" itemprop="dateModified" datetime="2019-02-11T20:26:56+08:00">2019-02-11</time>
               
             
           </span>
@@ -466,84 +466,77 @@
 <hr>
 <h1 id="Report-from-Referee-9"><a href="#Report-from-Referee-9" class="headerlink" title="Report from Referee 9"></a>Report from Referee 9</h1><p><strong><em> The authors discuss an interesting idea, which will be helpful in the further development of tensor network algorithms for 2D quantum many-body systems. An approach to these problems is via PEPS wavefunctions, which, however, pose severe problems when it comes to the numerical evaluation of relevant quantities, like observables. On the other hand, MPS are a standard tool for 1D systems. The authors convincingly show how to transform a PEPS for a 2D system to a MPS and in this way extract rather straight forwardly physically relevant information. I therefore support publication of the manuscript, after considering the following minor points: </em></strong></p>
 <p><strong><em> 1. In the introduction, it would be somewhat cleaner not to call the entanglement entropy a correlation, as usually correlations/correlation functions are rather associated to observables, and the entanglement entropy is not an observable. Also, it would be more precise to mention that it is known that some systems have log-corrections in the entropy (e.g., free fermions in 2D), and cite corresponding papers. </em></strong></p>
-<blockquote>
-<p>Response: We thank the referee very much for the comment. Indeed, correlation function (which is associated with some observables) and entanglement entropy are quite different concepts. In some gapped quantum models with short-range interactions, two-site correlation functions and two-site entanglement may show similar behavior. However, some states can have exponentially decaying correlations and present largeamount of entanglement. Thereby, there is a strong distinction between the two concepts.</p>
-<p>According to the referee’s comment, we have revised (1) the first paragraph and (2) the first sentence in the second paragraph in the Introduction. In addition, we have added a sentence about the log-correction of entanglement entropy in the first paragraph. Several corresponding papers have also been cited. Please see Ref. [14]-[16].          </p>
-</blockquote>
+<p><strong><em>Response: </em></strong><br>We thank the referee very much for the comment. Indeed, correlation function (which is associated with some observables) and entanglement entropy are quite different concepts. In some gapped quantum models with short-range interactions, two-site correlation functions and two-site entanglement may show similar behavior. However, some states can have exponentially decaying correlations and present largeamount of entanglement. Thereby, there is a strong distinction between the two concepts.</p>
+<p>According to the referee’s comment, we have revised (1) the first paragraph and (2) the first sentence in the second paragraph in the Introduction. In addition, we have added a sentence about the log-correction of entanglement entropy in the first paragraph. Several corresponding papers have also been cited. Please see Ref. [14]-[16].      </p>
+<hr>
 <p><strong><em> 2. After Eq. (3), it is said “After some calculations, we may find…”. It would be instructive to at least sketch these calculations, e.g, in an appendix.</em></strong></p>
-<blockquote>
-<p>Response: The methods for evaluating the Bell-type inequalites can be classify into the following three types:</p>
+<p><strong><em>Response: </em></strong><br>The methods for evaluating the Bell-type inequalites can be classify into the following three types:</p>
 <ul>
 <li>For two-site state, $M$ can be calculated analytically. </li>
 <li>For $2&lt;n&lt;=7$, no analytical solution exists. Thereby, one may construct a objective function $f$, and optimize it with respective to the 2n unit vectors. </li>
-<li><p>For large $n$, for instance, with $n$ up to 100, one need to use tensor-network based algorithms. </p>
-<p>We have summarized these situations in the first two paragraphs of Page 3. We hope the revised version is more instructive.</p>
-</li>
+<li>For large $n$, for instance, with $n​$ up to 100, one need to use tensor-network based algorithms. </li>
 </ul>
-</blockquote>
+<p>We have summarized these situations in the first two paragraphs of Page 3. We hope the revised version is more instructive.</p>
+<hr>
 <p><strong><em> 3. In Fig. 7 it might be helpful to write in the legend explicitly “PEPS” and “MPS” instead to indicate this via $\phi_0$ and $\varphi$. </em></strong></p>
-<blockquote>
-<p>   Response: In the revised version, we have used explicitly the words “PEPS” and “MPS” in the legend of Fig. 7.</p>
-</blockquote>
-<p><strong><em> 4. There are some typos throughout the manuscript, which should be fixed. </em></strong></p>
+<h2 id="gt-Response-In-the-revised-version-we-have-used-explicitly-the-words-“PEPS”-and-“MPS”-in-the-legend-of-Fig-7"><a href="#gt-Response-In-the-revised-version-we-have-used-explicitly-the-words-“PEPS”-and-“MPS”-in-the-legend-of-Fig-7" class="headerlink" title="&gt;    Response: In the revised version, we have used explicitly the words “PEPS” and “MPS” in the legend of Fig. 7."></a>&gt;    Response: In the revised version, we have used explicitly the words “PEPS” and “MPS” in the legend of Fig. 7.</h2><p><strong><em> 4. There are some typos throughout the manuscript, which should be fixed. </em></strong></p>
 <blockquote>
 <p>   Response:</p>
 </blockquote>
 <hr>
 <h1 id="Report-from-Referee-11"><a href="#Report-from-Referee-11" class="headerlink" title="Report from Referee 11:"></a>Report from Referee 11:</h1><p><strong><em> The paper “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on NxN square lattices”proposes a technique to transform a PEPS into an MPS structure and then use this transformation to study multipartite quantum correlations in a 2D system. As a test case, they study the ground state of NxN Ising model which was obtained using PEPS algorithm. They then transform the PEPS ground state into an MPS using a variational DMRG-like algorithm. They do this for different values of N and compute things like Bell correlation function, entanglement entropy, etc. From the value of the Bell correlation function obtained,they classify the phase transition of the model for different Ns with the different kinds of Bell-type inequalities they violate. While the paper uses a combination of several known numerical tensor network techniques, it is still novel in the sense that one can use it to classify multipartite entanglement in 2D. For this reason, I would be in favor of its publication in EPJB. However, I have some serious numerical concerns and a few technical queries for the authors before it gets accepted in the journal. I list them below: </em></strong></p>
-<p><strong><em> 1. The definition of Eq. (5) can be confusing. It is better to define both $g_l$ and $e_l$ in terms of $A_l$’s. Also to be consistent with the literature, the authors can mention that Eq. (7) is not the most general form of expressing the canonical form of an MPS. It should be mentioned here or in Eq. (4) that the ‘lambda matrices’ are already absorbed in the $A$’s. </em></strong></p>
-<blockquote>
-<p>   Response: In the revised version, we have defined both $g_l$ and $e_l$ in terms of $A_l$, and placed their definition before Eq. (5) in Page 3. In addition, we have also added a paragraph and several papers to refer to the widely used canonical form of MPS, which is below Eq. (7) and in red color.</p>
-</blockquote>
-<p><strong><em> 2. Below Eq.(8), the authors write the $\hat{M}_{[1\dots N]}$ as an MPO. The authors can elaborate a little bit on this construction for those who are not familiar with this. </em></strong></p>
-<blockquote>
-<p>   Response: We thank the referee very much to point out that the operator $\hat{M}_n$ in Eq.(8) is in the form of the summation of four MPOs. </p>
-<p>   The construction of the tripartite form is based upon the recursive definition of these operators. According to the referee’s comment, we have added an appendix in Page 10. We hope the appendix is useful for those who are interested in the construction of the operators. </p>
-</blockquote>
-<p><strong><em> 3. Section 3.2: The authors write that calculating two-site EVs require six effective environment tensors. This is only true for the CTMRG technique. One can also use other techniques like boundary MPS, etc. </em></strong></p>
-<blockquote>
-<p>   Response: We thank the referee for the comment. Boundary MPS and CTM are two widely used algorithms to calculate the effective environment tensors in PEPS. In this manuscript, we have just used the boundary MPS method, since we deal with finite-size squares. According to Fig. 2 in the original paper about the boundary MPS method (Jordan PRL 101, 250602, 2008), we used six tensors to describe the enviroment in our program.  </p>
-<p>   According to the referee’s comment, in Section 3.2, we have added a sentence refering both methods. Please see the paragraph in red color. In addition, the number ``six’’ is deleted in the manuscript. Thank the referee again for your patience.</p>
-</blockquote>
-<p><strong><em> 4. On the same section,the authors discusses the diffculty in evaluating Bell correlation function. I do not quite get why the authors can’t simply use a PEPO to represent the M operator and compute the sandwich. The authors say computing it with PEPS is ‘too difficult’. Do they mean its too expensive? If so, what is the cost? </em></strong></p>
-<blockquote>
-<p>   Response:</p>
-</blockquote>
-<p><strong><em> 5. This is the most major concern I have. 2D systems have been studied in the past using MPS, this is the whole idea of 2D DMRG. The problem with this is that it does not capture the true 2D correlations. For example, a nearest neighbor correlation in PEPS will turn into some long range correlation in the MPS. I have the same concern here. How good is the transformation. The authors show that the distance is of the order of $10^{-15}$ which is not bad. I would be happy to see if they can provide more figure of merits like a two-point EV to show that the transformation doesn’t change much the structure of the 2D correlations in the model which is very crucial for this paper.</em></strong></p>
-<blockquote>
-<p>   Response: Accroding to the referee’s comment, we have calculated the two-site correlation function $G^{zz}$ both for the MPSs and the original PEPSs. The result is added in Fig. 7 (b) in the revised manuscript. We hope the figure may prove that the transformation doesn’t change much the structure of the 2D correlations in the ground states of the model. </p>
-</blockquote>
-<p><strong><em> 6. Fig. 4 The authors should provide more information on the ground state computation. Is it a simple update or full update? What are the trotter steps, etc? </em></strong></p>
-<blockquote>
-<p>   Response: According to the referee’s comment, we have added some information about the ground-state calculation. Please see Page 6. In our calculations, we have used full update method, second-order Trotter-Suzuki decomposition, and a descreasing time slice (from 0.1 to 0.1 / 2^9). </p>
-</blockquote>
-<p><strong><em> 7. I have some major concern with Fig. 11, in particular Fig. 11(c) and (d). How is the entropy computed here? If the partitions are done based on Fig. 10, then the entropy should depend on the number of links you cut and not on the number of nearest neighbor sites.For example in Fig. 10 (a), I and II have the same number of links cut although the number of nearest neighbors are different. And how is such a ‘cut’ made when you have an MPS representation of an PEPS. I feel that the anomalies mentioned in foot note 2, might have to do with this. I would definitely like to get a clarification on this before the paper gets accepted. </em></strong></p>
-<blockquote>
-<p>   Response: In order to calculate the Bell correlation function S for some subregions on the N*N lattice, we mainly follow three steps:</p>
+<p><strong><em>1. The definition of Eq. (5) can be confusing. It is better to define both $g_l$ and $e_l$ in terms of $A_l$’s. Also to be consistent with the literature, the authors can mention that Eq. (7) is not the most general form of expressing the canonical form of an MPS. It should be mentioned here or in Eq. (4) that the ‘lambda matrices’ are already absorbed in the $A$’s.</em></strong></p>
+<p><strong><em>Response:</em></strong></p>
+<p>In the revised version, we have defined both $g_l$ and $e_l$ in terms of $A_l$, and placed their definition before Eq. (5) in Page 3. In addition, we have also added a paragraph and several papers to refer to the widely used canonical form of MPS, which is below Eq. (7) and in red color.</p>
+<hr>
+<p><strong><em>2. Below Eq.(8), the authors write the $\hat{M}_{[1\dots N]}$ as an MPO. The authors can elaborate a little bit on this construction for those who are not familiar with this.</em></strong></p>
+<p><strong><em>Response:</em></strong></p>
+<p>We thank the referee very much to point out that the operator $\hat{M}_n$ in Eq.(8) is in the form of the summation of four MPOs. </p>
+<p>The construction of the tripartite form is based upon the recursive definition of these operators. According to the referee’s comment, we have added an appendix in Page 10. We hope the appendix is useful for those who are interested in the construction of the operators. </p>
+<hr>
+<p><strong><em>3. Section 3.2: The authors write that calculating two-site EVs require six effective environment tensors. This is only true for the CTMRG technique. One can also use other techniques like boundary MPS, etc.</em></strong></p>
+<p><strong><em>Response:</em></strong></p>
+<p>We thank the referee for the comment. Boundary MPS and CTM are two widely used algorithms to calculate the effective environment tensors in PEPS. In this manuscript, we have just used the boundary MPS method, since we deal with finite-size squares. According to Fig. 2 in the original paper about the boundary MPS method (Jordan PRL 101, 250602, 2008), we used six tensors to describe the enviroment in our program.  </p>
+<p>According to the referee’s comment, in Section 3.2, we have added a sentence refering both methods. Please see the paragraph in red color. In addition, the number “six’’ is deleted in the manuscript. Thank the referee again for your patience.</p>
+<hr>
+<p><strong><em>4. On the same section,the authors discusses the diffculty in evaluating Bell correlation function. I do not quite get why the authors can’t simply use a PEPO to represent the M operator and compute the sandwich. The authors say computing it with PEPS is ‘too difficult’. Do they mean its too expensive? If so, what is the cost?</em></strong></p>
+<p><strong><em>Response:</em></strong></p>
+<hr>
+<p><strong><em>5. This is the most major concern I have. 2D systems have been studied in the past using MPS, this is the whole idea of 2D DMRG. The problem with this is that it does not capture the true 2D correlations. For example, a nearest neighbor correlation in PEPS will turn into some long range correlation in the MPS. I have the same concern here. How good is the transformation. The authors show that the distance is of the order of $10^{-15}$ which is not bad. I would be happy to see if they can provide more figure of merits like a two-point EV to show that the transformation doesn’t change much the structure of the 2D correlations in the model which is very crucial for this paper.</em></strong></p>
+<p><strong><em>Response:</em></strong> Accroding to the referee’s comment, we have calculated the two-site correlation function $G^{zz}$ both for the MPSs and the original PEPSs. The result is added in Fig. 7 (b) in the revised manuscript. We hope the figure may prove that the transformation doesn’t change much the structure of the 2D correlations in the ground states of the model. </p>
+<hr>
+<p><strong><em>6. Fig. 4 The authors should provide more information on the ground state computation. Is it a simple update or full update? What are the trotter steps, etc?</em></strong></p>
+<p><strong><em>Response:</em></strong> According to the referee’s comment, we have added some information about the ground-state calculation. Please see Page 6. In our calculations, we have used full update method, second-order Trotter-Suzuki decomposition, and a descreasing time slice (from 0.1 to 0.1 / 2^9). </p>
+<hr>
+<p><strong><em>7. I have some major concern with Fig. 11, in particular Fig. 11(c) and (d). How is the entropy computed here? If the partitions are done based on Fig. 10, then the entropy should depend on the number of links you cut and not on the number of nearest neighbor sites.For example in Fig. 10 (a), I and II have the same number of links cut although the number of nearest neighbors are different. And how is such a ‘cut’ made when you have an MPS representation of an PEPS. I feel that the anomalies mentioned in foot note 2, might have to do with this. I would definitely like to get a clarification on this before the paper gets accepted.</em></strong></p>
+<p><strong><em>Response:</em></strong></p>
+<p>In order to calculate the Bell correlation function S for some subregions on the N*N lattice, we mainly follow three steps:</p>
 <ul>
-<li>(S1) Prepare the MPS- ground state of the model.</li>
-<li>(S2) Figure out the reduced density matrix of the concerned subregion from the MPS. The reduced density m matrix is in the form of one-dimensional networks, i.e., MPO. We have added two sub-figures in Fig. 10, that is, Fig. 10(c) and Fig. 10(d). The corresponding text are added into the second paragraph of Sec. 4.2.2.</li>
-<li>(S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.</li>
+<li><p>(S1) Prepare the MPS- ground state of the model.</p>
+</li>
+<li><p>(S2) Figure out the reduced density matrix of the concerned subregion from the MPS. The reduced density m matrix is in the form of one-dimensional networks, i.e., MPO. We have added two sub-figures in Fig. 10, that is, Fig. 10(c) and Fig. 10(d). The corresponding text are added into the second paragraph of Sec. 4.2.2.</p>
+</li>
+<li><p>(S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.</p>
+</li>
 </ul>
 <p>Next, we answer the referee’s major concern, i.e., the calculation of the entropy in the subregions.</p>
 <p>In order to calculate the entanglement entropy E for some small subregions on the N*N lattice, we mainly follow two steps:</p>
 <ul>
-<li>(E1) Figure out the reduced density matrix $rho$ explicitly by contracting the MPO from above step (S2).</li>
+<li><p>(E1) Figure out the reduced density matrix $rho$ explicitly by contracting the MPO from above step (S2).</p>
+</li>
 <li><p>(E2) Diagnolize rho, figure out its full eigen-value spectrum, and calculate the entropy. </p>
-<p>Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.</p>
-<p>In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </p>
 </li>
 </ul>
-</blockquote>
-<pre><code>- (c1) the ground state is in the form of canonical MPS, and 
-
-- (c2) one just concerns the entropy between the left part of the MPS and the right part (in other words, the MPS is divided into two parts). 
-
-For instance, the entanglement entropy for subregion II in Fig. 10 may be figured out by this method. However, when considering subregions I, from Fig. 10(d) one can see that the MPS is divided into four part, i.e., [1,2,...,23], [24,25,26],[27...33],[34,35,36]. In such a situation, we need to use the steps (E1) and (E2) to calculate the entropy. 
-</code></pre><blockquote>
-<p>   According to the referee’s comment, we have added two subfigures in Fig. 10 to illustrate the network for the reduced density matrix of the subregions. In addition, in Sec 4.2.2, we have added the second paragraph to explain the alrorithm for calculating the partial nonlocality. Finally, on Page 10, just above Eq. (21), we have added several sentences to explain the calculation of the entanglement entropy. We hope the revised manuscript becomes more readable. We thank the referee for the patience.  </p>
-</blockquote>
-<p><strong><em> I would definitely like to get some clarifications on the above specially point (5) and(7) before the paper gets accepted in the journal. </em></strong></p>
+<p>Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.</p>
+<p>In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </p>
+<ul>
+<li>(c1) the ground state is in the form of canonical MPS, and </li>
+<li>(c2) one just concerns the entropy between the left part of the MPS and the right part (in other words, the MPS is divided into two parts). </li>
+</ul>
+<p>For instance, the entanglement entropy for subregion II in Fig. 10 may be figured out by this method. However, when considering subregions I, from Fig. 10(d) one can see that the MPS is divided into four part, i.e., [1,2,…,23], [24,25,26],[27…33],[34,35,36]. In such a situation, we need to use the steps (E1) and (E2) to calculate the entropy. </p>
+<p>According to the referee’s comment, we have added two subfigures in Fig. 10 to illustrate the network for the reduced density matrix of the subregions. In addition, in Sec 4.2.2, we have added the second paragraph to explain the alrorithm for calculating the partial nonlocality. Finally, on Page 10, just above Eq. (21), we have added several sentences to explain the calculation of the entanglement entropy. We hope the revised manuscript becomes more readable. We thank the referee for the patience.  </p>
+<hr>
+<p><strong><em>I would definitely like to get some clarifications on the above specially point (5) and(7) before the paper gets accepted in the journal.</em></strong></p>
 <hr>
 <h1 id="Mandatory-information"><a href="#Mandatory-information" class="headerlink" title="Mandatory information"></a>Mandatory information</h1><ul>
 <li>Graphical abstract</li>
@@ -764,7 +757,7 @@ For instance, the entanglement entropy for subregion II in Fig. 10 may be figure
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Report-from-Referee-9"><span class="nav-number">1.</span> <span class="nav-text">Report from Referee 9</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Report-from-Referee-11"><span class="nav-number">2.</span> <span class="nav-text">Report from Referee 11:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mandatory-information"><span class="nav-number">3.</span> <span class="nav-text">Mandatory information</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Report-from-Referee-9"><span class="nav-number">1.</span> <span class="nav-text">Report from Referee 9</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#gt-Response-In-the-revised-version-we-have-used-explicitly-the-words-“PEPS”-and-“MPS”-in-the-legend-of-Fig-7"><span class="nav-number">1.1.</span> <span class="nav-text">&gt;    Response: In the revised version, we have used explicitly the words “PEPS” and “MPS” in the legend of Fig. 7.</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Report-from-Referee-11"><span class="nav-number">2.</span> <span class="nav-text">Report from Referee 11:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mandatory-information"><span class="nav-number">3.</span> <span class="nav-text">Mandatory information</span></a></li></ol></div>
             
 
           </div>
