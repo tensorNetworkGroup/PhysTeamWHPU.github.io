@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="XXXX教研室">
 <meta property="og:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-11T12:12:10.861Z">
+<meta property="og:updated_time" content="2019-02-11T12:13:48.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ms revision">
 <meta name="twitter:description" content="09/01/2019Editorial Decision Ms b180617 “Multipartite quantum nonlocality in two-dimensional transverse-field Ising models on $N\times N$ square lattices”by Sun et al. Dear Dr Sun, Your manuscript has">
@@ -400,7 +400,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-11 20:12:10" itemprop="dateModified" datetime="2019-02-11T20:12:10+08:00">2019-02-11</time>
+                <time title="Modified: 2019-02-11 20:13:48" itemprop="dateModified" datetime="2019-02-11T20:13:48+08:00">2019-02-11</time>
               
             
           </span>
@@ -520,21 +520,21 @@
 <p><strong><em> 7. I have some major concern with Fig. 11, in particular Fig. 11(c) and (d). How is the entropy computed here? If the partitions are done based on Fig. 10, then the entropy should depend on the number of links you cut and not on the number of nearest neighbor sites.For example in Fig. 10 (a), I and II have the same number of links cut although the number of nearest neighbors are different. And how is such a ‘cut’ made when you have an MPS representation of an PEPS. I feel that the anomalies mentioned in foot note 2, might have to do with this. I would definitely like to get a clarification on this before the paper gets accepted. </em></strong></p>
 <blockquote>
 <p>   Response: In order to calculate the Bell correlation function S for some subregions on the N*N lattice, we mainly follow three steps:</p>
-<pre><code>- (S1) Prepare the MPS- ground state of the model.
-</code></pre></blockquote>
-<pre><code>- (S2) Figure out the reduced density matrix of the concerned subregion from the MPS. The reduced density m matrix is in the form of one-dimensional networks, i.e., MPO. We have added two sub-figures in Fig. 10, that is, Fig. 10(c) and Fig. 10(d). The corresponding text are added into the second paragraph of Sec. 4.2.2.
-
-- (S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.
-</code></pre><blockquote>
-<p>   Next, we answer the referee’s major concern, i.e., the calculation of the entropy in the subregions.</p>
-<p>   In order to calculate the entanglement entropy E for some small subregions on the N*N lattice, we mainly follow two steps:</p>
-</blockquote>
-<pre><code>- (E1) Figure out the reduced density matrix $rho$ explicitly by contracting the MPO from above step (S2).
-
-- (E2) Diagnolize rho, figure out its full eigen-value spectrum, and calculate the entropy. 
-</code></pre><blockquote>
-<p>   Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.</p>
-<p>   In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </p>
+<ul>
+<li>(S1) Prepare the MPS- ground state of the model.</li>
+<li>(S2) Figure out the reduced density matrix of the concerned subregion from the MPS. The reduced density m matrix is in the form of one-dimensional networks, i.e., MPO. We have added two sub-figures in Fig. 10, that is, Fig. 10(c) and Fig. 10(d). The corresponding text are added into the second paragraph of Sec. 4.2.2.</li>
+<li><p>(S3) Calculate the Bell correlation function from the MPO with the tensor network algorithm introduced in Sec. 3.</p>
+<p>Next, we answer the referee’s major concern, i.e., the calculation of the entropy in the subregions.</p>
+<p>In order to calculate the entanglement entropy E for some small subregions on the N*N lattice, we mainly follow two steps:</p>
+<ul>
+<li>(E1) Figure out the reduced density matrix $rho$ explicitly by contracting the MPO from above step (S2).</li>
+</ul>
+</li>
+<li><p>(E2) Diagnolize rho, figure out its full eigen-value spectrum, and calculate the entropy. </p>
+<p>Since the size of the subregions are very small, the above steps offer a cheap method to calculate the entropy, thus is used in this manuscript.</p>
+<p>In addition, the “lambda matrix” of the canonical MPS can be used to figure out the entanglement entropy conveniontly if </p>
+</li>
+</ul>
 </blockquote>
 <pre><code>- (c1) the ground state is in the form of canonical MPS, and 
 
